@@ -1,8 +1,4 @@
 
-Bitbucket Url:
-
-https://bitbucket.org/Jayanth_aj/snippetexecuter
-
 Requirements
 	Install nodejs
 	install npm package http-server
