@@ -1,0 +1,128 @@
+﻿@font-face {
+    font-family: openSans;
+    src: url(OpenSans.ttf);
+}
+
+body {
+    font-family: openSans;
+}
+
+body {
+    !font-family: Raleway, sans-serif;
+}
+#over img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#over1 {
+    display: block;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+}
+
+@media only screen 
+  and (max-width: 736px) {
+  .mobile {
+    display:block;
+  }
+  .desktop {
+    display:none;
+  }
+  .tablet {
+    display:none;
+  }
+}
+@media only screen 
+  and (max-width: 750px) {
+  #appTagLine {
+  	display: none;
+  }
+}
+@media only screen 
+  and (max-width: 575px) {
+  #appName {
+  	display: none;
+  }
+}
+
+@media only screen 
+  and (min-width: 736px) 
+  and (max-width: 1200px){ 
+  .tablet {
+    display:block;
+  }
+  .desktop {
+    display:none;
+  }
+  .mobile {
+    display:none;
+  }
+}
+
+input[ng-model=searchText]:focus {
+  border-color: #e91e63 !important;
+}
+
+@media only screen 
+  and (min-width: 1200px) {
+  .desktop {
+    display:block;
+  }
+  .tablet {
+    display:none;
+  }
+  .mobile {
+    display:none;
+  }
+}
+
+.notliked{
+  color: #777777;
+}
+
+.liked{
+
+    color: #e91e63;
+}
+.fab-custom{
+    top: auto !important;
+    right: 1px !important;
+    bottom: 5% !important;
+    left: auto !important;
+    position: fixed !important;
+
+  }
+
+.fab-custom1{
+    top: auto !important;
+    right: 1px !important;
+    bottom: 15% !important;
+    left: auto !important;
+    position: fixed !important;
+
+  }
+md-input-container:not(.md-input-invalid).md-input-focused .md-input {
+    !border-color: red !important;
+    !color: #E91E63 !important;
+}
+md-input-container:not(.md-input-invalid).md-input-focused .md-icon {
+    color: red !important;
+}
+
+.gridListdemoBasicUsage md-grid-tile {
+  transition: all 400ms ease-out 50ms; }
+
+  .gridListdemoBasicUsage .green {
+  background: #b9f6ca; }
+
+  
+  .gridListdemoBasicUsage .yellow {
+  background: #ffff8d; }
+
+.gridListdemoBasicUsage .blue {
+  background: #84ffff; }
+
+.gridListdemoBasicUsage .purple {
+  background: #b388ff; }

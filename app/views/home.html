@@ -1,0 +1,66 @@
+<md-content style="background: whitesmoke;">
+
+
+    <div class='md-padding' style="padding-top:0px;" layout="row" layout-align="center" layout-wrap>
+        <md-card md-theme-watch  style="width:560px;">
+            <md-card-content style="padding:;">
+                <form name="colorForm">
+                <md-card-title layout="row" style="color:;">
+                    <md-card-title-text style="text-align: center;overflow: hidden;">
+                        <div layout="row">
+                            <md-input-container flex="50">
+                                <input type="file" file-model ="codedfile" required > <md-tooltip>Upload Snippet</md-tooltip>
+                            </md-input-container>
+                            <md-input-container flex="50">
+                              <label>Language</label>
+                              <md-select name="type" ng-model="language" required>
+                                <md-option name="c" value="9">C</md-option>
+                                <md-option name="c++" value="12">C++</md-option>
+                                <md-option name="java" value="40">Java</md-option>
+                                <md-option name="php" value="59">Php</md-option>
+                              </md-select>
+                            </md-input-container>
+                        </div>
+                        <md-input-container class="md-block">
+                          <label>Console Input</label>
+                          <textarea ng-model="consoleio" rows="3" md-select-on-focus ></textarea>
+                        </md-input-container>
+                    </md-card-title-text>
+                </md-card-title>
+                <div>
+                    <md-button type="submit" ng-click="execute()">Complile &amp; Run</md-button>
+                </div>
+                </form>
+            </md-card-content>
+        </md-card>
+        <md-card md-theme-watch  style="width:560px;">
+            <md-card-content style="padding:;">
+                <h2 class="md-title">Result</h2>
+                <div layout="row">
+                    <p>Time : </p> 
+                    <p ng-model="timecompx">{{timecompx}}</p>
+                </div>
+                <div layout="row">
+                    <p>Memory : </p> 
+                    <p mg-model="memcompx">{{memcompx}}</p>
+                </div>
+                <div layout="row">
+                    <p>Compilation Error : </p> 
+                    <p ng-model="comperr">{{comperr}}</p>
+                </div>
+                <!-- <div layout="row">
+                    <p>Console Input : </p> 
+                    <p>zxcvbnm</p>
+                </div> -->
+                <div layout="row">
+                    <p>Console Output : </p> 
+                    <p ng-model="stdout">{{stdout}}</p>
+                </div>
+                <!-- <div layout="row">
+                    <p>Console Error : </p> 
+                    <p>zxcvbnm</p>
+                </div> -->
+            </md-card-content>
+        </md-card>
+    </div>
+</md-content>

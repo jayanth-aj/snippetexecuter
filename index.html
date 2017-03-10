@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="Toppr Careers, Frontend Hiring Challenge by Hacker Earth" content="Toppr Frontend Hiring Challenge- Hacker Earth" />
+    <meta name="description" content="Toppr Frontend Hiring Challenge- Hacker Earth" />
+    <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>SnippetExecuter</title>
+    <link href="bower_components/angular-material/angular-material.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="app/styles/style.css" rel="stylesheet" />
+</head>
+
+<body ng-app="myApp" ng-cloak layout="row" style="background: whitesmoke;">
+    <div layout="column" layout-fill>
+        <div layout="column" layout-fill>
+            <header>
+                <md-toolbar md-scroll-shrink>
+                    <div class="md-toolbar-tools" layout-align="center center">SnippetExecuter</div>
+                </md-toolbar>
+                <!-- <md-toolbar style="background:#E91E63;">
+                    <div class="md-toolbar-tools">
+                        <h2><span style="color:#fff;" id="appName">SnippetExecuter</span></h2>
+                    </div>
+                </md-toolbar> -->
+            </header>
+            <div>
+                <main layout="row" flex>
+                    <md-content flex id="content" layout-xs="column">
+                        <div class="fade-view" ui-view>
+                            <!-- UI VIEW -->
+                        </div>
+                    </md-content>
+                </main>
+            </div>
+            <footer>
+                <md-toolbar class="md-scroll-shrink">
+                  <div layout="row" layout-align="center center" flex>
+                    &copy; 2017 Opensource Development Tool 
+                  </div>
+                </md-toolbar>
+            </footer>
+            <!-- Site Header Start from here -->
+            <!-- angular and its other modules loding -->
+            <script src="bower_components/angular/angular.js"></script>
+            <script src="bower_components/angular-aria/angular-aria.js"></script>
+            <script src="bower_components/angular-animate/angular-animate.js"></script>
+            <script src="bower_components/angular-material/angular-material.js"></script>
+            <script src="bower_components/angular-messages/angular-messages.js"></script>
+            <script src="bower_components/angular-ui-router/angular-ui-router.min.js"></script>
+            <!-- Custom scripts  -->
+            <script src="app/app.js"></script>
+            <script src="app/controllers/homeCtrl.js"></script>
+</body>
+
+</html>
