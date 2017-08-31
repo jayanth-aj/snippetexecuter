@@ -24,6 +24,10 @@ http://localhost
 or
 http:..localhost:8080 (given port in above commad)
 
+Output Screenshot
+
+![Alt text](https://github.com/jayanth-aj/snippetexecuter/blob/master/Screenshot%20from%202017-03-05%2008-40-35.png)
+
 
 Author Deails
 Jayanth Anantharapu
